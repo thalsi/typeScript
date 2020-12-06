@@ -58,3 +58,46 @@ interface User{
     name:string,
 }
 
+//2.varbiles
+//var
+var x:string="hi";
+
+function callfun(){
+    var xx=5;
+    if(true){
+        var y=10;
+        console.log(xx);
+        console.log(y);
+        
+    }
+    console.log(xx);
+    console.log(y);
+    
+}
+// console.log(xx); error
+// console.log(y); error
+callfun();
+
+console.log(thalsi);
+var thalsi=67;
+console.log(thalsi);
+
+//const
+const contant=675;
+console.log(contant);
+
+//type Operations
+let cars={name:'m800',age:45,place:'muvattupzha'};
+//console.log(name in cars);//in
+delete cars.name;
+console.log(cars); //delete
+
+console.log(typeof cars);//typeof
+console.log(cars instanceof Array);//intanceof
+console.log(cars instanceof String);
+interface Hotals{
+    name:string
+}
+let hotal=<Hotals>{};
+hotal.name="fast";
+console.log(hotal);
