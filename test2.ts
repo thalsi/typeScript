@@ -101,3 +101,12 @@ interface Hotals{
 let hotal=<Hotals>{};
 hotal.name="fast";
 console.log(hotal);
+
+type pe="thalsi"|'yoo';
+let P:pe;
+if(P='yoo'){}   
+
+let play=[2,34,5,6,7];
+play.forEach(function(a){
+    console.log(a);
+})
