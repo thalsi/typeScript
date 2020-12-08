@@ -110,3 +110,40 @@ let play=[2,34,5,6,7];
 play.forEach(function(a){
     console.log(a);
 })
+
+//operations
+//1.arthreamtic operations
+let add=4+4;
+let sub=6-2;
+let mul=5*2;
+let div=6/2;
+let mod=60%10;
+let ing=add++;
+let dec=add--;
+
+//2.comper operation
+let aa=3;
+let bb=4;
+console.log(aa==bb);
+console.log(aa==3);
+
+console.log(aa===bb);
+console.log(aa!=3);//fasle
+console.log(aa!==3);//fasle
+console.log(a>b);
+console.log(a<b);
+console.log(a<=b);
+console.log(a>=b);
+
+console.log(a && b);
+console.log(a || b);
+console.log(!a);
+
+
+
+
+
+
+
+
+
