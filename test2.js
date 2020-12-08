@@ -1,79 +1,72 @@
-//1.Bulid-in/privative datatpye
-//number
-var numLnumber = 67;
-var num1 = 5.6; //
-console.log(num1);
-//string
-var str = "";
-var a = "welcome";
-var b = "muvattupzha";
-var str1 = a + "" + b;
-var str2 = a + " this are " + b;
-console.log(str2);
-//boolean
-var bol = true;
-console.log(bol);
-//void
-var void1 = undefined;
-var void2 = null;
-console.log(void2);
-//null
-var null1 = null;
-//undefind
-var undefind1 = undefined;
-if (null1 == undefind1) {
-    console.log("null and undefind value are equal");
-}
-//any
-var anyValue = 'hi';
-anyValue = 454;
-anyValue = true;
-function myfunction(a, b) {
-    console.log(a + "" + b);
-    console.log("thre are " + a + " and " + b);
-}
-myfunction(3, 4);
-myfunction("fast", "second");
-// 2.userdefind datatype
-//array
-var list = [1, 2, 3, 4];
-var list1 = [12, 34, 54, 56];
-var nameArray = ['a', 'b', 'c'];
-var nameArray1 = ['a', 'b', 'c'];
-var array3 = [2, 'sdfsdf', 'li', 46, 35, 34];
-var array4 = [2, 'sdfsdf', 'li', 46, 35, 34];
-//tuple
-var tup = [1, "joi"];
-//2.varbiles
-//var
-var x = "hi";
-function callfun() {
-    var xx = 5;
-    if (true) {
-        var y = 10;
-        console.log(xx);
-        console.log(y);
-    }
-    console.log(xx);
-    console.log(y);
-}
-// console.log(xx); error
-// console.log(y); error
-callfun();
-console.log(thalsi);
-var thalsi = 67;
-console.log(thalsi);
-//const
-var contant = 675;
-console.log(contant);
-//type Operations
-var cars = { name: 'm800', age: 45, place: 'muvattupzha' };
-//console.log(name in cars);//in
-delete cars.name;
-console.log(cars); //delete
-console.log(typeof cars); //typeof
-console.log(cars instanceof Array); //intanceof
-console.log(cars instanceof String);
-var hotal = {};
-hotal.name = "fast";
-console.log(hotal);
+//private datatypes
+//1.string
+//2.number
+//3.boolean
+//4.any
+//5.null
+//6.undefind
+//7.void
+var s = "dfgfdg";
+var n = 4654;
+var b = true;
+var anys = 5654;
+var nulls = null;
+var und = undefined;
+//userdefind data type
+//1.array
+//2.tuple
+//3.enum
+//4.calss
+//5.function
+//6.interface
+//genaric
+//Decorations
+//null vs undifind
+var nuls = null;
+console.log(nuls);
+console.log(typeof nuls);
+var un;
+console.log(un);
+//Operations
+//1.Arthemattic operation
+//2.compartion opeartios
+//3.logical opeartion
+//4.bitwace operation
+//5.assement operation 
+//6.tany operation
+//7.type opertion
+//+ - / % * ++ --
+//== === != <= >= < >
+//&& || !
+//= += -= *= /= %=
+//?:
+//in delete typeof instance of
+var person = { name: "ali", age: 345 };
+console.log('name' in person);
+delete person.age;
+console.log(person);
+console.log(typeof person);
+var arr = [345, 45, 54, 6];
+console.log(arr instanceof Array);
+//annotation
+var obj;
+obj = {
+    id: 45,
+    name: "frery"
+};
+console.log(obj);
+var obj2 = {
+    id: null,
+    name: ''
+};
+obj2.id = 45;
+obj2.name = 'hi';
+console.log(obj2);
+var obj3 = {};
+obj3.id = 23;
+obj3.name = 'roshan';
+console.log(obj3);
+var obj4;
+obj4.id = 24;
+obj4.name = 'thalsi';
+console.log(obj4);
