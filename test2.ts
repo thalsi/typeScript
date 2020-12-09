@@ -113,9 +113,64 @@ passingArray(arr1);
 let arrayCopy=[...arr1];
 console.log(arrayCopy);
 
+let arr3:(number|string)[]=['fgd',344,'sdfdsf',54,54,45,'fg','fg'];
+console.log(arr3);
 
+//tuple
+//tuple declation
+let tuple_name=[12,'thalsi',56,'gfh'];
+console.log(tuple_name);
+let tuple2:[string,number]=['thalsi',34];
+console.log(tuple2);
+console.log(tuple_name instanceof Array);
 
+//union
+//union decation
+//passing parameter
+//uniontype array
+let unions:number|string;
+    unions=5344;
+    unions='thalsi';
+function myunion(val:(number|string)){
+    console.log(val);
+    
+}
+myunion(45);
+myunion('dfdfs');
 
+let unArr:string[]|number[];
+unArr=[343,45,45,56];
+console.log(unArr);
+unArr=['df','dfdf','rtr'];
+console.log(unArr);
 
+//string
+//string decleration
+//pre and post(backtick) 
+//string literal
 
+let str:string='dfdf';
+let str2:string="thalsi";
 
+let str3:string="the are"+str+""+str2;
+let str4:string=`thalsi ${str} are ${str2}`;
+type str5='a'|'b';
+let p:str5;
+
+if(p='a'){
+    console.log('correct');
+    console.log(p);
+    
+}
+
+type str6='a'|'b';
+function leteral(val:str6){
+    console.log(val);
+    
+}
+leteral('a');
+leteral('b');
+
+//number 
+
+let num:number=45;

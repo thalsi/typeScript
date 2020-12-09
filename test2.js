@@ -91,3 +91,47 @@ function passingArray(array) {
 passingArray(arr1);
 var arrayCopy = __spreadArrays(arr1);
 console.log(arrayCopy);
+var arr3 = ['fgd', 344, 'sdfdsf', 54, 54, 45, 'fg', 'fg'];
+console.log(arr3);
+//tuple
+//tuple declation
+var tuple_name = [12, 'thalsi', 56, 'gfh'];
+console.log(tuple_name);
+var tuple2 = ['thalsi', 34];
+console.log(tuple2);
+console.log(tuple_name instanceof Array);
+//union
+//union decation
+//passing parameter
+//uniontype array
+var unions;
+unions = 5344;
+unions = 'thalsi';
+function myunion(val) {
+    console.log(val);
+}
+myunion(45);
+myunion('dfdfs');
+var unArr;
+unArr = [343, 45, 45, 56];
+console.log(unArr);
+unArr = ['df', 'dfdf', 'rtr'];
+console.log(unArr);
+//string
+//string decleration
+//pre and post(backtick) 
+//string literal
+var str = 'dfdf';
+var str2 = "thalsi";
+var str3 = "the are" + str + "" + str2;
+var str4 = "thalsi " + str + " are " + str2;
+var p;
+if (p = 'a') {
+    console.log('correct');
+    console.log(p);
+}
+function leteral(val) {
+    console.log(val);
+}
+leteral('a');
+leteral('b');
