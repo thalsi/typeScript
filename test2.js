@@ -6,6 +6,13 @@
 //5.null
 //6.undefind
 //7.void
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 var s = "dfgfdg";
 var n = 4654;
 var b = true;
@@ -66,7 +73,21 @@ var obj3 = {};
 obj3.id = 23;
 obj3.name = 'roshan';
 console.log(obj3);
-var obj4;
-obj4.id = 24;
-obj4.name = 'thalsi';
-console.log(obj4);
+//array
+//array decalartion
+//array object
+//array in loop
+//array passing to function
+//array spread operation
+var arr1 = [23, 34, 54, 45];
+var arr2 = ['df', 'sfdf'];
+var arrobj = new Array('hi', 'koi', 'loop');
+for (var i in arr1) {
+    console.log(arr1[i]);
+}
+function passingArray(array) {
+    console.log(array);
+}
+passingArray(arr1);
+var arrayCopy = __spreadArrays(arr1);
+console.log(arrayCopy);

@@ -92,7 +92,26 @@ obj3.name='roshan';
 console.log(obj3);
 
 //array
+//array decalartion
+//array object
+//array in loop
+//array passing to function
+//array spread operation
+let arr1:number[]=[23,34,54,45];
+let arr2:Array<string>=['df','sfdf'];
 
+let arrobj:string[]=new Array('hi', 'koi', 'loop');
+
+for(let i in arr1){
+    console.log(arr1[i]);
+}
+function passingArray(array:number[]){
+    console.log(array);
+}
+passingArray(arr1);
+
+let arrayCopy=[...arr1];
+console.log(arrayCopy);
 
 
 
