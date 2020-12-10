@@ -19,7 +19,7 @@ var b = true;
 var anys = 5654;
 var nulls = null;
 var und = undefined;
-//userdefind data type
+//user-defind data type
 //1.array
 //2.tuple
 //3.enum
@@ -135,3 +135,23 @@ function leteral(val) {
 }
 leteral('a');
 leteral('b');
+//number 
+var num = 45;
+//coundition stament 
+//if
+//if else
+//else if
+//swich
+//while
+//do while
+//for
+//for in 
+//for of
+var array1 = [23, 45, 56, 67, 78];
+for (var data in array1) {
+    console.log("data:-" + array1[data] + " index " + data);
+}
+for (var _i = 0, array1_1 = array1; _i < array1_1.length; _i++) {
+    var data = array1_1[_i];
+    console.log(data);
+}

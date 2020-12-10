@@ -14,7 +14,7 @@ let anys:any=5654;
 let nulls:number=null;
 let und:string=undefined;
 
-//userdefind data type
+//user-defind data type
 //1.array
 //2.tuple
 //3.enum
@@ -174,3 +174,24 @@ leteral('b');
 //number 
 
 let num:number=45;
+
+//coundition stament 
+//if
+//if else
+//else if
+
+//swich
+
+//while
+//do while
+
+//for
+//for in 
+//for of
+let array1:number[]=[23,45,56,67,78];
+for(let data in array1){
+    console.log(`data:-${array1[data]} index ${data}`); 
+}
+for(let data of array1){
+    console.log(data);
+}
