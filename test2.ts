@@ -287,3 +287,47 @@ let arrow2=()=> "koi";
 console.log(arrow2());
 let arrow3=()=>{return "loop"};
 console.log(arrow3());
+
+
+// class
+
+class Student{
+    id:number;
+    name:string;
+    user:string;
+    constructor(a:string){
+        this.user=a;
+    }
+
+    dispaly(){
+        return this.name+this.user;
+    }
+}
+
+let obje=new Student("akil");
+
+obje.id=45;
+obje.name="koi";
+let values=obje.dispaly();
+console.log("calss------->"+values);
+
+//inhartances
+
+class Car{
+    carName:string;
+    constructor(a:string){
+        this.carName=a;
+    }
+}
+
+class CarModel extends Car{
+    constructor(a:string){
+            super(a);
+    }
+    dis(){
+        return this.carName;
+    }
+}
+
+let car=new CarModel("bmw");
+console.log(car.dis());

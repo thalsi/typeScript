@@ -6,6 +6,19 @@
 //5.null
 //6.undefind
 //7.void
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __spreadArrays = (this && this.__spreadArrays) || function () {
     for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
     for (var r = Array(s), k = 0, i = 0; i < il; i++)
@@ -225,3 +238,37 @@ var arrow2 = function () { return "koi"; };
 console.log(arrow2());
 var arrow3 = function () { return "loop"; };
 console.log(arrow3());
+// class
+var Student = /** @class */ (function () {
+    function Student(a) {
+        this.user = a;
+    }
+    Student.prototype.dispaly = function () {
+        return this.name + this.user;
+    };
+    return Student;
+}());
+var obje = new Student("akil");
+obje.id = 45;
+obje.name = "koi";
+var values = obje.dispaly();
+console.log("calss------->" + values);
+//inhartances
+var Car = /** @class */ (function () {
+    function Car(a) {
+        this.carName = a;
+    }
+    return Car;
+}());
+var CarModel = /** @class */ (function (_super) {
+    __extends(CarModel, _super);
+    function CarModel(a) {
+        return _super.call(this, a) || this;
+    }
+    CarModel.prototype.dis = function () {
+        return this.carName;
+    };
+    return CarModel;
+}(Car));
+var car = new CarModel("bmw");
+console.log(car.dis());
