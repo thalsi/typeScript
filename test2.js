@@ -170,3 +170,58 @@ function myEnum(status) {
     console.log(status);
 }
 myEnum(Status.stop);
+//forEach
+var arrayEach = [23, 34, 43, 45, 54];
+arrayEach.forEach(function (a) {
+    console.log("foreach:-" + a);
+});
+arrayEach.forEach(function (value) {
+    console.log("for each=" + value);
+});
+//map
+// let maps= new Map();
+// maps.set(1,'ali');
+// maps.set('name','thalsi');
+// console.log(maps.get(1));
+// console.log(maps.get('name'));
+// for(let key in maps.keys()){
+//     console.log("key:-"+key);
+// }
+// for(let val in maps.values()){
+//     console.log("value"+val);
+// }
+//set 
+// let studentEntries = new Set();  
+// //Add Values  
+// studentEntries.add("John");  
+// studentEntries.add("Peter");  
+// studentEntries.add("Gayle");  
+// studentEntries.add("Kohli");   
+// studentEntries.add("Dhawan");   
+// //Returns Set data  
+// console.log(studentEntries);   
+//function
+function parmmy(a, b) {
+    console.log("a" + a + " b" + b);
+}
+parmmy(2);
+parmmy(3, 4);
+function respam(a) {
+    var b = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        b[_i - 1] = arguments[_i];
+    }
+    console.log("a==" + a);
+    console.log("b==" + b);
+}
+respam(23);
+respam(100, 3, 4, 56, 6);
+var fun = function () {
+    return "hiii";
+};
+console.log(fun());
+var arrow = function () { return console.log("hii"); };
+var arrow2 = function () { return "koi"; };
+console.log(arrow2());
+var arrow3 = function () { return "loop"; };
+console.log(arrow3());

@@ -211,3 +211,79 @@ function myEnum(status:Status){
     
 }
 myEnum(Status.stop);
+
+
+//forEach
+
+let arrayEach:number[]=[23,34,43,45,54];
+
+arrayEach.forEach(a=>{
+    console.log("foreach:-"+a);
+    
+});
+arrayEach.forEach(function (value){
+    console.log("for each="+value);
+});
+
+//map
+
+
+// let maps= new Map();
+
+// maps.set(1,'ali');
+// maps.set('name','thalsi');
+
+// console.log(maps.get(1));
+// console.log(maps.get('name'));
+
+// for(let key in maps.keys()){
+//     console.log("key:-"+key);
+    
+// }
+
+// for(let val in maps.values()){
+//     console.log("value"+val);
+    
+// }
+
+//set 
+
+// let studentEntries = new Set();  
+   
+// //Add Values  
+// studentEntries.add("John");  
+// studentEntries.add("Peter");  
+// studentEntries.add("Gayle");  
+// studentEntries.add("Kohli");   
+// studentEntries.add("Dhawan");   
+  
+// //Returns Set data  
+// console.log(studentEntries);   
+
+//function
+
+function parmmy(a:number,b?:number){
+console.log(`a${a} b${b}`);
+
+}
+parmmy(2);
+parmmy(3,4);
+
+function respam(a:number,...b:number[]){
+    console.log("a=="+a);
+    console.log("b=="+b);
+}
+
+respam(23);
+respam(100,3,4,56,6);
+
+var fun=function (){
+    return "hiii";
+}
+console.log(fun());
+
+let arrow=()=>console.log("hii");
+let arrow2=()=> "koi";
+console.log(arrow2());
+let arrow3=()=>{return "loop"};
+console.log(arrow3());
