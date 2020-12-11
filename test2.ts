@@ -118,7 +118,7 @@ console.log(arr3);
 
 //tuple
 //tuple declation
-let tuple_name=[12,'thalsi',56,'gfh'];
+let tuple_name=[12,'thalsi',56,'gfh',45,5445,34];
 console.log(tuple_name);
 let tuple2:[string,number]=['thalsi',34];
 console.log(tuple2);
@@ -195,3 +195,19 @@ for(let data in array1){
 for(let data of array1){
     console.log(data);
 }
+//enum
+//number enum
+//string enum
+//heterogeneous enum
+enum Status{
+    active=3,
+    inactive,
+    stop
+}
+console.log(Status);
+
+function myEnum(status:Status){
+    console.log(status);
+    
+}
+myEnum(Status.stop);

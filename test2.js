@@ -95,7 +95,7 @@ var arr3 = ['fgd', 344, 'sdfdsf', 54, 54, 45, 'fg', 'fg'];
 console.log(arr3);
 //tuple
 //tuple declation
-var tuple_name = [12, 'thalsi', 56, 'gfh'];
+var tuple_name = [12, 'thalsi', 56, 'gfh', 45, 5445, 34];
 console.log(tuple_name);
 var tuple2 = ['thalsi', 34];
 console.log(tuple2);
@@ -155,3 +155,18 @@ for (var _i = 0, array1_1 = array1; _i < array1_1.length; _i++) {
     var data = array1_1[_i];
     console.log(data);
 }
+//enum
+//number enum
+//string enum
+//heterogeneous enum
+var Status;
+(function (Status) {
+    Status[Status["active"] = 3] = "active";
+    Status[Status["inactive"] = 4] = "inactive";
+    Status[Status["stop"] = 5] = "stop";
+})(Status || (Status = {}));
+console.log(Status);
+function myEnum(status) {
+    console.log(status);
+}
+myEnum(Status.stop);
