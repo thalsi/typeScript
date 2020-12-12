@@ -283,3 +283,9 @@ emp3.id = 34;
 emp3.code = 56;
 console.log(emp3);
 //module
+//ganric
+function myfunction(params) {
+    return params;
+}
+var output1 = myfunction('string');
+console.log(output1);

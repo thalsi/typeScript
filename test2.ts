@@ -363,3 +363,22 @@ emp3.code=56;
 console.log(emp3);
 
 //module
+
+//ganric
+function myfunction<T>(params:T):T {
+    return params;
+}
+let output1=myfunction<string>('string');
+console.log(output1);
+
+function myganric<T>(item:T[]):T[]{
+    return new Array<T>().concat(item);
+}
+
+let arrNumber=myganric<number>([23,3,43]);
+
+function getItems(items: any[] ) : any[] {  
+    return new Array().concat(items);  
+}  
+let myNumArr = getItems([10, 20, 30]);  
+let myStrArr = getItems(["Hello", "JavaTpoint"]);  
