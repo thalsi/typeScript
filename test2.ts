@@ -1,3 +1,4 @@
+
 //private datatypes
 //1.string
 //2.number
@@ -331,3 +332,34 @@ class CarModel extends Car{
 
 let car=new CarModel("bmw");
 console.log(car.dis());
+
+// interface
+
+interface Empolyee{
+    id:number;
+    name:string;
+    salay?:number;
+}
+let emp:Empolyee={id:23,name:'alimon'};
+let emp1:Empolyee={id:45,name:'thlasi',salay:4000};
+
+
+function empData(a:Empolyee):Empolyee{
+    return {id:243,name:'hi'};
+}
+empData({id:12,name:'annu',salay:45});
+
+interface U{
+    id:number;
+}
+
+interface Us extends U{
+    code:number;
+}
+
+let emp3=<Us>{};
+emp3.id=34;
+emp3.code=56;
+console.log(emp3);
+
+//module

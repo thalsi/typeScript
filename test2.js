@@ -272,3 +272,14 @@ var CarModel = /** @class */ (function (_super) {
 }(Car));
 var car = new CarModel("bmw");
 console.log(car.dis());
+var emp = { id: 23, name: 'alimon' };
+var emp1 = { id: 45, name: 'thlasi', salay: 4000 };
+function empData(a) {
+    return { id: 243, name: 'hi' };
+}
+empData({ id: 12, name: 'annu', salay: 45 });
+var emp3 = {};
+emp3.id = 34;
+emp3.code = 56;
+console.log(emp3);
+//module
