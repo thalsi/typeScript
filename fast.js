@@ -1,7 +1,15 @@
 /*
 ========================= Data types =======================
 1.static
+    1.number
+        2.string
+            3.boolean
+                4.null
+                    5.void
 2.user defind
+    1.array
+        2.function
+            3.tuple
 3.decater
 */
 /*
@@ -38,6 +46,12 @@ var arr3;
 arr3 = [2423, 432, 43, 243];
 console.log(arr3);
 function hello() {
-    return "hello world";
+    return "hello world function";
 }
 console.log(hello());
+var tuples;
+tuples = [12, 'thalsi'];
+console.log(tuples);
+var tuples1;
+tuples1 = [[1, 'thlse'], [2, 'ali'], [3, 'aju']];
+console.log(tuples1);
